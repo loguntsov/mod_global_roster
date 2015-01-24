@@ -2,7 +2,8 @@
 
 -behavior(gen_mod).
 
--include("ejabberd.hrl").
+-include_lib("../../ejabberd/include/ejabberd.hrl").
+-include("log.hrl").
 -export([start/2, stop/1, on_presence_joined/4, on_presence_left/4]).
 
 start(Host, _Opts) ->
